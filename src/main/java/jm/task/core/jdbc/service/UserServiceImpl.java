@@ -46,7 +46,7 @@ public class UserServiceImpl implements UserService {
             e.printStackTrace();
         }
     }
-ds
+
     public void removeUserById(long id) {
         PreparedStatement preparedStatement = null;
 
