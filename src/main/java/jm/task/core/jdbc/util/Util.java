@@ -1,7 +1,11 @@
 package jm.task.core.jdbc.util;
 
-import java.io.IOException;
-import java.sql.*;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class Util {
     private static final String USER_NAME = "postgres";
@@ -20,7 +24,7 @@ public class Util {
             System.out.println("Connection Failed");
         }
         return connection;
-    }
 
-    // реализуйте настройку соеденения с БД
 }
+}
+
