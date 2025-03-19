@@ -4,12 +4,10 @@ import javax.persistence.*;
 
 @Table(name = "username")
 @Entity
-
 public class User {
 
-    @Column(name = "id")
-
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
